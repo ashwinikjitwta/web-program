@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>program 3</title>
+<style>
+p {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+img{
+	padding:-100px;
+}
+a{
+	padding:3px;
+}
+h5{
+	text-align:left;
+	padding:10px;
+	}
+	figcaption{
+		padding:25px;
+		text-align:left;
+		font-size:11.5px;
+	}
+	figcaption{
+		padding:3px;
+	}
+	h4{
+		padding:1px;
+	}
+	figure{
+		font-style:italic;
+		font-size:14px;
+	}
+	ul{
+		list-style-type:none;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#home","#places","#Gallery","#AboutUs",#Search>Home | places | Gallery | AboutUs | Search</a></li>
+			<h5>Malpe Beach,Udupi</h5>
+	<img src="C:\Users\Admin\Downloads\images.JPG" alt="" width="395" height="200"></img>
+		<li>by<a  href="#Ashwini.k"> Ashwini.k</a></li>
+		<figcaption>Malpe is a natural port in the Udupi District in Karnataka,India.Located at the mouth of the Malpe River about six kilometers to the west of the Udupi,it is an important port and a major finishing harbour on the Karnataka coast .The town of malpe is assosiated largely with settlements of the Mogaveera fishermen community. </figcaption>
+		<figcaption>year:2019</figcaption>
+		<figcaption>Date:6th october</figcaption>
+		<div>
+		<h4>Reviews</h4>
+		<strong>We missed it!</strong><br>cifha
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<div>
+		<small>Such a lovely visuals we missed it</small><hr>
+		</div>
+		<strong>Love click</strong><br>Jaya
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-white.png" width="20" height="20">
+		<div>
+		<small> That was a very good day</small><hr>
+		</div>
+		<strong>Nice</strong><br>Fiona
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-orange.jpg" width="20" height="20">
+		<img src="stars-white.png" width="20" height="20">
+		<img src="stars-white.png" width="20" height="20">
+		<div>
+			<small>Good one</small><hr>
+		</div>
+	</div>
+	<li><a href="#home","#places","#Gallery","#AboutUs",#Search>Home | places | Gallery | AboutUs | Search</a></li>
+	</ul>
+	<figure>
+	<figcaption>copyright @ 2020 My Coastal Stay</figcaption>
+	</figure>
+<p id="demo"></p>
+<script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = 'Ocean Thearphy';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+fs += 5;
+if (fs >= 50)
+{
+clearInterval(var1); //paused
+var2 = setInterval(deTimer, 500);
+
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = 'Ocean Thearphy';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+if (fs == 5)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+</body>
+</html>
